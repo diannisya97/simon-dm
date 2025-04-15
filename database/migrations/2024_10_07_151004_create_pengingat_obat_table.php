@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('jenis_obat'); // Sesuaikan dengan nama input dari modal
             $table->date('tanggal'); // Sesuaikan dengan nama input dari modal
             $table->time('pukul'); // Sesuaikan dengan nama input dari modal
-            $table->enum('kategori', ['Sebelum', 'Sesudah']); // Sesuaikan dengan nama input dari modal
+            $table->enum('kategori', ['Sebelum Makan', 'Sesudah Makan', 'Saat Makan']); // Sesuaikan dengan nama input dari modal
             $table->enum('status', ['Menunggu', 'Sudah', 'Terlewatkan'])->default('Menunggu'); // Tambahkan default
             $table->timestamps();
         });
